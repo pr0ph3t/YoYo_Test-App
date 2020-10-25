@@ -124,8 +124,10 @@
 
     public async Task UpdateCounter(double actualdistance)
     {
+        yoyoService.TotalTime += 1;
+        yoyoService.TotalDistance += (int)actualdistance;
         var content = JsonConvert.SerializeObject(actualdistance);
-        await Http.PostAsJsonAsync($"YoYoTest/Stop", content).ConfigureAwait(false);
+        await Http.PostAsJsonAsync($"YoYoTest/Updatecounter", content).ConfigureAwait(false);
     }
 
     public async Task UpdateAthleteInfo(TestModel testdata, int shuttleNumber)
