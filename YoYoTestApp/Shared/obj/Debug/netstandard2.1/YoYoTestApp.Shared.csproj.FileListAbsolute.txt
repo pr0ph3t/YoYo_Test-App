@@ -16,3 +16,12 @@ E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\nets
 E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.csproj.CoreCompileInputs.cache
 E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.dll
 E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.pdb
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\bin\Debug\netstandard2.1\YoYoTestApp.Shared.deps.json
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\bin\Debug\netstandard2.1\YoYoTestApp.Shared.dll
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\bin\Debug\netstandard2.1\YoYoTestApp.Shared.pdb
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.csprojAssemblyReference.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.AssemblyInfoInputs.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.AssemblyInfo.cs
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.csproj.CoreCompileInputs.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.dll
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Shared\obj\Debug\netstandard2.1\YoYoTestApp.Shared.pdb

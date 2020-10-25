@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj",
+      "projectUniqueName": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj",
       "projectName": "YoYoTestApp.Shared",
-      "projectPath": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj",
+      "projectPath": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj",
       "packagesPath": "C:\\Users\\pr0phet\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Shared\\obj\\",
+      "outputPath": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

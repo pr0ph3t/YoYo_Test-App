@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "b7W0vExG01Iy+jAV/zsCiyvmWNZSuk5291m9zrm3tnoPNWbiYEs5jC7sS2S/Ds5fzpinz4s3pzXTLhlh64Agow==",
+  "dgSpecHash": "3BIaeGXIHthNK4L0LOpHfkiIqdoTVJmLAuf6IWdVIYHjkQKgsyUtdBPN50MM/2yg9A+hAu773UFv+nd0ldHL6g==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Server\\YoYoTestApp.Server.csproj",
+  "projectFilePath": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Server\\YoYoTestApp.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pr0phet\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.6\\microsoft.aspnetcore.authorization.3.1.6.nupkg.sha512",
     "C:\\Users\\pr0phet\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.6\\microsoft.aspnetcore.components.3.1.6.nupkg.sha512",

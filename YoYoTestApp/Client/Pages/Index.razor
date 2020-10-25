@@ -24,7 +24,7 @@
         {
             var shuttleno = 0;
             nextShuttle = Math.Round(testdata.LevelTime);
-            while (shuttleno < testdata.ShuttleNo)
+            while (shuttleno < testdata.ShuttleNo && yoyoService.Athletes.All(x => !x.IsStopped))
             {
                 progress = 0;
                 nextShuttle = Math.Round(testdata.LevelTime);
@@ -46,7 +46,7 @@
                     HandleProgress(progress * multipleFactor);
                     StateHasChanged();
                 }
-                UpdateAthleteInfo();
+                UpdateAthleteInfo(testdata, shuttleno);
                 shuttleno++;
                 StateHasChanged();
             }
@@ -95,7 +95,7 @@
 
     public async Task<List<TestModel>> GetTests()
     {
-        var _tests = await Http.GetFromJsonAsync<List<TestModel>>("YoYoTest/GetAthletes");
+        var _tests = await Http.GetFromJsonAsync<List<TestModel>>("YoYoTest/GetTests");
         return _tests;
     }
 
@@ -112,7 +112,7 @@
             athlete.IsStopped = true;
         }
         var content = JsonConvert.SerializeObject(athlete.Id);
-        await Http.PostAsJsonAsync($"YoYoTest/Warn",content).ConfigureAwait(false);
+        await Http.PostAsJsonAsync($"YoYoTest/Warn", content).ConfigureAwait(false);
     }
 
     public async Task Stop(Athlete athlete)
@@ -125,18 +125,23 @@
     public async Task UpdateCounter(double actualdistance)
     {
         var content = JsonConvert.SerializeObject(actualdistance);
-        await Http.PostAsJsonAsync($"YoYoTest/Stop",content).ConfigureAwait(false);
+        await Http.PostAsJsonAsync($"YoYoTest/Stop", content).ConfigureAwait(false);
     }
 
-    public async Task UpdateAthleteInfo()
+    public async Task UpdateAthleteInfo(TestModel testdata, int shuttleNumber)
     {
+        foreach (var athlete in yoyoService.Athletes.Where(x => !x.IsStopped))
+        {
+            athlete.Level = testdata.Speedlevel;
+            athlete.Shuttle = shuttleNumber;
+        }
         await Http.GetAsync($"YoYoTest/UpdateAthleteInfo").ConfigureAwait(false);
     }
 
     public async Task OnEditButtonClick(int id, int level, int shuttle)
     {
 
-        var data = new  { id = id, level = level, shuttle = shuttle };
+        var data = new { id = id, level = level, shuttle = shuttle };
         var content = JsonConvert.SerializeObject(data);
         await Http.PostAsJsonAsync($"YoYoTest/Edit", content).ConfigureAwait(false);
     }
@@ -149,81 +154,81 @@
                 <h4>YoYo Test</h4>
             </div>
             <div class="row">
-                    @if (!yoyoService.IsProcessStarted)
-                    {
-                        <div class="athlete-div-play-continer" @onclick="(e=> StartTimer())">
-                            <img src="/images/play-button.png" class="athlete-img-play" />
-                        </div>
-                    }
-                    else
-                    {
+                @if (!yoyoService.IsProcessStarted)
+                {
+                    <div class="athlete-div-play-continer" @onclick="(e=> StartTimer())">
+                        <img src="/images/play-button.png" class="athlete-img-play" />
+                    </div>
+                }
+                else
+                {
 
-                        <div id="cont">
-                            <svg id="svg" width="200" height="200" viewPort="0 0 100 100">
-                                <text x="50%" y="50%" text-anchor="middle" stroke="#343a40" stroke-width="1px" dy=".3em">
-                                    <tspan x="100" dy="-20">Level @yoyoService.Level</tspan>
-                                    <tspan x="100" dy="20">Shuttle @yoyoService.Shuttle</tspan>
-                                    <tspan x="100" dy="25">@yoyoService.ShuttleSpeed km/h</tspan>
-                                </text>
-                                <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
-                                <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" style="stroke-dashoffset: @strockDashOffSet;"></circle>
-                            </svg>
-                        </div>
-                    }
-                </div>
-                <div class="row">
-                    <table class="table athlete-table-with-header">
-                        <thead>
-                            <tr>
-                                <td>
-                                    <label>Next Shuttle</label>
-                                </td>
-                                <td>
-                                    <label>Total Time</label>
-                                </td>
-                                <td>
-                                    <label>Total Distance</label>
-                                </td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>@nextShuttle S</td>
-                                <td class="athlete-add-border-rl">@yoyoService.TotalTime S</td>
-                                <td>@yoyoService.TotalDistance M</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                    <div id="cont">
+                        <svg id="svg" width="200" height="200" viewPort="0 0 100 100">
+                            <text x="50%" y="50%" text-anchor="middle" stroke="#343a40" stroke-width="1px" dy=".3em">
+                                <tspan x="100" dy="-20">Level @yoyoService.Level</tspan>
+                                <tspan x="100" dy="20">Shuttle @yoyoService.Shuttle</tspan>
+                                <tspan x="100" dy="25">@yoyoService.ShuttleSpeed km/h</tspan>
+                            </text>
+                            <circle r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" stroke-dashoffset="0"></circle>
+                            <circle id="bar" r="90" cx="100" cy="100" fill="transparent" stroke-dasharray="565.48" style="stroke-dashoffset: @strockDashOffSet;"></circle>
+                        </svg>
+                    </div>
+                }
+            </div>
+            <div class="row">
+                <table class="table athlete-table-with-header">
+                    <thead>
+                        <tr>
+                            <td>
+                                <label>Next Shuttle</label>
+                            </td>
+                            <td>
+                                <label>Total Time</label>
+                            </td>
+                            <td>
+                                <label>Total Distance</label>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>@nextShuttle S</td>
+                            <td class="athlete-add-border-rl">@yoyoService.TotalTime S</td>
+                            <td>@yoyoService.TotalDistance M</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <div class="row">
-            <label>Track</label>
-            <hr />
-            @if (yoyoService?.Athletes?.Any() == true)
-            {
-                <table class="table">
-                    @foreach (var athlete in yoyoService.Athletes)
-                    {
-                        <tr>
-                            <td><label>@string.Format("{0}. {1}", athlete.Id, athlete.Name)</label></td>
-                            <td>
-                                @if (yoyoService.IsProcessStarted && !athlete.IsStopped)
-                                {
-                                    <label class="yoyo-warn" @onclick="@(e => Warn(athlete))">@athlete.WarnText</label>
-                                    <label class="yoyo-danger" @onclick="@(e => Stop(athlete))">Stop</label>
-                                }
-                                else if (yoyoService.IsProcessStarted && athlete.IsStopped)
-                                {
-                                    <label>@athlete.Level/@athlete.Shuttle</label>
-                                }
-                            </td>
-                        </tr>
-                    }
-                </table>
-            }
-        </div>
+        <label>Track</label>
+        <hr />
+        @if (yoyoService?.Athletes?.Any() == true)
+        {
+            <table class="table">
+                @foreach (var athlete in yoyoService.Athletes)
+                {
+                    <tr>
+                        <td><label>@string.Format("{0}. {1}", athlete.Id, athlete.Name)</label></td>
+                        <td>
+                            @if (yoyoService.IsProcessStarted && !athlete.IsStopped)
+                            {
+                                <label class="yoyo-warn" @onclick="@(e => Warn(athlete))">@athlete.WarnText</label>
+                                <label class="yoyo-danger" @onclick="@(e => Stop(athlete))">Stop</label>
+                            }
+                            else if (yoyoService.IsProcessStarted && athlete.IsStopped)
+                            {
+                                <label>@athlete.Level/@athlete.Shuttle</label>
+                            }
+                        </td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
 </div>
 
 

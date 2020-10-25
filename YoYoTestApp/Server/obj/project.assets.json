@@ -1005,11 +1005,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Server\\YoYoTestApp.Server.csproj",
+      "projectUniqueName": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Server\\YoYoTestApp.Server.csproj",
       "projectName": "YoYoTestApp.Server",
-      "projectPath": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Server\\YoYoTestApp.Server.csproj",
+      "projectPath": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Server\\YoYoTestApp.Server.csproj",
       "packagesPath": "C:\\Users\\pr0phet\\.nuget\\packages\\",
-      "outputPath": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Server\\obj\\",
+      "outputPath": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1029,11 +1029,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Client\\YoYoTestApp.Client.csproj": {
-              "projectPath": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Client\\YoYoTestApp.Client.csproj"
+            "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Client\\YoYoTestApp.Client.csproj": {
+              "projectPath": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Client\\YoYoTestApp.Client.csproj"
             },
-            "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj": {
-              "projectPath": "E:\\Projects\\YoYoWeb\\Yo-Yo-Test-App\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj"
+            "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj": {
+              "projectPath": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Shared\\YoYoTestApp.Shared.csproj"
             }
           }
         }
