@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,6 +19,13 @@ namespace YoYoTestApp.Server
             }
             intId = 0;
             return false;
+        }
+
+        public static int GetIntValueFromJObject(this string json, string key) 
+        {
+            var jobject = JObject.Parse(json);
+            var value = jobject.GetValue(key);
+            return value.ToObject<int>();
         }
     }
 }

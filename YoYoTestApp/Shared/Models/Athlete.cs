@@ -21,6 +21,7 @@ namespace YoYoTestApp.Shared.Models
         public bool IsWarned { get { return _isWarned; } set { _isWarned = value; } }
         public bool IsStopped { get { return _isStopped; } set { _isStopped = value; } }
         public string WarnText { get { return _warnText; } set { _warnText = value; } }
+        public bool IsEditing { get; set; }
     }
 
 }

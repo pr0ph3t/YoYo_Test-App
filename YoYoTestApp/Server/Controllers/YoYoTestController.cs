@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using YoYoTestApp.Shared.Models;
 using YoYoTestApp.Server.Services;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace YoYoTestApp.Server.Controllers
 {
@@ -79,11 +81,11 @@ namespace YoYoTestApp.Server.Controllers
         }
 
         [HttpPost("Edit")]
-        public IActionResult Edit([FromBody] dynamic userdata)
+        public IActionResult Edit([FromBody] string athleteeInfo)
         {
-            int id = userdata.id;
-            int level = userdata.level;
-            int shuttle = userdata.shuttle;
+            int id = athleteeInfo.GetIntValueFromJObject("id");
+            int level = athleteeInfo.GetIntValueFromJObject("level");
+            int shuttle = athleteeInfo.GetIntValueFromJObject("shuttle");
             _yoyoservice.OnEditButtonClick(id, level, shuttle);
             return Ok();
         }

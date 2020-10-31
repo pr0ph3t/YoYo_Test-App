@@ -44,18 +44,20 @@
                         await Task.Delay(1000);
                         nextShuttle -= 1;
                         progress = progress + 1;
-                        UpdateCounter(actalDdistance);
+                        await UpdateCounter(actalDdistance);
                         HandleProgress(progress * multipleFactor);
                         StateHasChanged();
                     }
                 }
-                UpdateAthleteInfo(testdata, shuttleno);
+                await UpdateAthleteInfo(testdata, shuttleno);
                 shuttleno++;
                 StateHasChanged();
             }
             StateHasChanged();
 
         }
+
+        yoyoService.Athletes.ForEach(athletee => athletee.IsStopped = true);
     }
 
 
@@ -142,12 +144,20 @@
         await Http.GetAsync($"YoYoTest/UpdateAthleteInfo").ConfigureAwait(false);
     }
 
-    public async Task OnEditButtonClick(int id, int level, int shuttle)
+    public async Task OnEditButtonClick(Athlete athlete)
     {
-
-        var data = new { id = id, level = level, shuttle = shuttle };
+        var data = new { id = athlete.Id, level = athlete.Level, shuttle = athlete.Shuttle };
         var content = JsonConvert.SerializeObject(data);
         await Http.PostAsJsonAsync($"YoYoTest/Edit", content).ConfigureAwait(false);
+        ToggleVisibility(athlete, false);
+    }
+
+
+
+    public void ToggleVisibility(Athlete athlete, bool value)
+    {
+        Console.WriteLine("called");
+        athlete.IsEditing = value;
     }
 }
 
@@ -221,6 +231,7 @@
             <table class="table">
                 @foreach (var athlete in yoyoService.Athletes)
                 {
+                    
                     <tr>
                         <td><label>@string.Format("{0}. {1}", athlete.Id, athlete.Name)</label></td>
                         <td>
@@ -231,7 +242,21 @@
                             }
                             else if (yoyoService.IsProcessStarted && athlete.IsStopped)
                             {
-                                <label>@athlete.Level/@athlete.Shuttle</label>
+
+                                if (!athlete.IsEditing)
+                                {
+                                    <div class="">
+                                        <label>@athlete.Level/@athlete.Shuttle <i class="arrow-down" @onclick="(() => ToggleVisibility(athlete, true)"></i></label>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="">
+                                        <input type="number" class="athlete-edit-input" @bind-value="@athlete.Level" />
+                                        <input type="number" class="athlete-edit-input" @bind-value="@athlete.Shuttle" />
+                                        <input type="button" class="btn-info" value="Update" @onclick="(async e => await OnEditButtonClick(athlete).ConfigureAwait(false))" />
+                                    </div>
+                                }
                             }
                         </td>
                     </tr>
@@ -347,5 +372,20 @@
     .play-btn:hover .play-btn__svg {
         fill: #a41d33;
         opacity: 1;
+    }
+
+    .arrow-down {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin-left: 3px;
+    }
+
+    .athlete-edit-input
+    {
+        width: 50px;
     }
 </style>

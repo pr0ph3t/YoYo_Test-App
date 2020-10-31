@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\jAsVdYFTAvDt96nhQSRFylVFCqo9JgnoMoGHec31v7c=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\oKolWW8sJ5AJmpKpxKjTxkgN9yMi4prqdxZJnjlYT70=.hash",
       "Source": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\YoYoTestApp.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/YoYoTestApp.Client.dll.gz"
     },
@@ -196,7 +196,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\NayRbWLDNHIT5TljEBGAFzQdkqRcyhdC0ttOW2q0q9g=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\cvMBwNBkB8FWsNtM8S9xRq2gJoGXURMCRkCX5KGvMtA=.hash",
       "Source": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\YoYoTestApp.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/YoYoTestApp.Shared.dll.gz"
     },
@@ -271,12 +271,12 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\fV--Oe5gPTI4qAhf27_tpoTZitnvRwQfFo0J2B6Kg4A=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\gRYnxKLqsrTNAvSkefh-bMCPLGfYOE3dxSMosRzWw50=.hash",
       "Source": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\YoYoTestApp.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/YoYoTestApp.Client.pdb.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\mVMvZttz745mn53HTlYt1K4pWyLikJUSjRwkT8Snykg=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\3qDUY7gn5OFzVj-MUzwh8t9l6ynuJOkDgJ1_z0tUaR0=.hash",
       "Source": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\YoYoTestApp.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/YoYoTestApp.Shared.pdb.gz"
     },
@@ -301,7 +301,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hWLo1Jn9vgMbC-AYRTSA6Oyo8V1rou5fwWCYmdfgSxE=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\1FVDqTsKIPNfY7LK0zDiUrWnudZEE4OLpLYJlycEPqA=.hash",
       "Source": "E:\\Projects\\YoYoTestApp\\YoYoTestApp\\YoYoTestApp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
     }

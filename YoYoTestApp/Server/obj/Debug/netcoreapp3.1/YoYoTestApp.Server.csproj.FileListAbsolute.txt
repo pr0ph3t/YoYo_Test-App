@@ -431,7 +431,15 @@ E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netc
 E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.pdb
 E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.genruntimeconfig.cache
 E:\Projects\YoYoWeb\Yo-Yo-Test-App\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\wwwroot\images\play-button.png
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.csprojAssemblyReference.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.AssemblyInfoInputs.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.AssemblyInfo.cs
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.csproj.CoreCompileInputs.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.MvcApplicationPartsAssemblyInfo.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.RazorAssemblyInfo.cache
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.RazorAssemblyInfo.cs
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\YoYoTestApp.Client.StaticWebAssets.xml
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\appsettings.json
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
@@ -586,7 +594,6 @@ E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\B
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\zh-Hans\Microsoft.CodeAnalysis.resources.dll
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\BlazorDebugProxy\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\YoYoTestApp.Client.StaticWebAssets.xml
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\YoYoTestApp.Server.StaticWebAssets.xml
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\YoYoTestApp.Server.exe
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\wwwroot\images\play-button.png
@@ -627,13 +634,6 @@ E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\Y
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\YoYoTestApp.Shared.dll
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\YoYoTestApp.Client.pdb
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\bin\Debug\netcoreapp3.1\YoYoTestApp.Shared.pdb
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.csprojAssemblyReference.cache
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.AssemblyInfoInputs.cache
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.AssemblyInfo.cs
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.csproj.CoreCompileInputs.cache
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.MvcApplicationPartsAssemblyInfo.cache
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.RazorAssemblyInfo.cache
-E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.RazorAssemblyInfo.cs
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.TagHelpers.input.cache
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.TagHelpers.output.cache
 E:\Projects\YoYoTestApp\YoYoTestApp\YoYoTestApp\Server\obj\Debug\netcoreapp3.1\YoYoTestApp.Server.RazorCoreGenerate.cache

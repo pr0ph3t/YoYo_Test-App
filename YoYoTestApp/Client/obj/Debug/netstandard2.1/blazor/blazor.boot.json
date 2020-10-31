@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "YoYoTestApp.Client.dll": "sha256-jAsVdYFTAvDt96nhQSRFylVFCqo9JgnoMoGHec31v7c=",
+      "YoYoTestApp.Client.dll": "sha256-oKolWW8sJ5AJmpKpxKjTxkgN9yMi4prqdxZJnjlYT70=",
       "System.Text.Json.dll": "sha256-HQeN+ZfHAERO+uW0fP0J9J3WV1hQ3vUIOWbqGSYBPp8=",
       "System.Runtime.CompilerServices.Unsafe.dll": "sha256-kL\/omZDwqByAi+lPdMeDmr3XjHcn4RVb+LmZ4mut1Yc=",
       "mscorlib.dll": "sha256-BaZPMj95+YNe3G4ckTGD6szZFwZeA2MOHn91zTGKDeU=",
@@ -45,7 +45,7 @@
       "System.ComponentModel.DataAnnotations.dll": "sha256-LIfCYwg+PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=",
       "Microsoft.AspNetCore.Components.dll": "sha256-PEg9ghiKSWBTX0jq8pFDvv2Yvw92Y8W0ELtWrSE4fhA=",
       "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-6gJMwefpsWLHWsEipZp143xn8k2Ea27upnXqjUT6iNI=",
-      "YoYoTestApp.Shared.dll": "sha256-NayRbWLDNHIT5TljEBGAFzQdkqRcyhdC0ttOW2q0q9g=",
+      "YoYoTestApp.Shared.dll": "sha256-cvMBwNBkB8FWsNtM8S9xRq2gJoGXURMCRkCX5KGvMtA=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-FJ+rEgcx6ljTxwbRXZSUGfrDKpVvOxHCSfNxbnXNn3M=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-oK1Bjv95fH+hSbogUkJE+xDAI203kJG6lL6Sm\/NuPWg=",
       "Microsoft.Extensions.Primitives.dll": "sha256-y\/FyJQOcW2TOcTp7Iuv8brGBzL5ZP0oJdG7ysK+gtKc=",
@@ -62,8 +62,8 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "YoYoTestApp.Client.pdb": "sha256-fV\/\/Oe5gPTI4qAhf27+tpoTZitnvRwQfFo0J2B6Kg4A=",
-      "YoYoTestApp.Shared.pdb": "sha256-mVMvZttz745mn53HTlYt1K4pWyLikJUSjRwkT8Snykg="
+      "YoYoTestApp.Client.pdb": "sha256-gRYnxKLqsrTNAvSkefh\/bMCPLGfYOE3dxSMosRzWw50=",
+      "YoYoTestApp.Shared.pdb": "sha256-3qDUY7gn5OFzVj\/MUzwh8t9l6ynuJOkDgJ1+z0tUaR0="
     },
     "runtime": {
       "dotnet.3.2.0.js": "sha256-mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=",
